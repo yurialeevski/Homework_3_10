@@ -1,4 +1,4 @@
-package ru.skypro.homework.springweb.pojoEmployee;
+package ru.skypro.homework.springdatajpa.pojoEmployee;
 
 public class Employee {
     private Integer id;

@@ -1,11 +1,10 @@
-package ru.skypro.homework.springweb.controller;
+package ru.skypro.homework.springdatajpa.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import ru.skypro.homework.springweb.pojoEmployee.Employee;
-import ru.skypro.homework.springweb.service.EmployeeService;
+import ru.skypro.homework.springdatajpa.pojoEmployee.Employee;
+import ru.skypro.homework.springdatajpa.service.EmployeeService;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController

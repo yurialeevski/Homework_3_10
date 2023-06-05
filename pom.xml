@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>ru.skypro.homework</groupId>
-    <artifactId>Spring-Web</artifactId>
+    <artifactId>Spring-Data-JPA</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Spring-Web</name>
     <description>Spring-Web</description>

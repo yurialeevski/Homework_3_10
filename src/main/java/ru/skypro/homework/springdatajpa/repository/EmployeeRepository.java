@@ -1,6 +1,6 @@
-package ru.skypro.homework.springweb.repository;
+package ru.skypro.homework.springdatajpa.repository;
 
-import ru.skypro.homework.springweb.pojoEmployee.Employee;
+import ru.skypro.homework.springdatajpa.pojoEmployee.Employee;
 
 import java.util.List;
 

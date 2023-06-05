@@ -1,10 +1,9 @@
-package ru.skypro.homework.springweb.repository;
+package ru.skypro.homework.springdatajpa.repository;
 
 import org.springframework.stereotype.Repository;
-import ru.skypro.homework.springweb.pojoEmployee.Employee;
+import ru.skypro.homework.springdatajpa.pojoEmployee.Employee;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 @Repository

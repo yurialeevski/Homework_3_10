@@ -1,6 +1,6 @@
-package ru.skypro.homework.springweb.service;
+package ru.skypro.homework.springdatajpa.service;
 
-import ru.skypro.homework.springweb.pojoEmployee.Employee;
+import ru.skypro.homework.springdatajpa.pojoEmployee.Employee;
 
 import java.util.List;
 

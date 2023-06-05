@@ -1,4 +1,4 @@
-package ru.skypro.homework.springweb.exceptions;
+package ru.skypro.homework.springdatajpa.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
