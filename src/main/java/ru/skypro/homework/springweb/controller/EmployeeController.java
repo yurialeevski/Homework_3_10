@@ -1,11 +1,11 @@
 package ru.skypro.homework.springweb.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 import ru.skypro.homework.springweb.pojoEmployee.Employee;
 import ru.skypro.homework.springweb.service.EmployeeService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -17,6 +17,35 @@ public class EmployeeController {
         this.employeeService = employeeService;
     }
 
+    @PutMapping("/{id}")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void updateEmployeeById(@PathVariable Integer id, @RequestBody Employee employee) {
+        employeeService.updateEmployeeById(id, employee);
+    }
+    @PostMapping("/single-employee")
+    @ResponseStatus(HttpStatus.CREATED)
+    public void addEmployee(@RequestBody Employee employee){
+        employeeService.addEmployee(employee);
+    }
+    @PostMapping("/")
+    @ResponseStatus(HttpStatus.CREATED)
+    public void addListOfEmployees(@RequestBody List<Employee> employees){
+        employeeService.addListOfEmployees(employees);
+    }
+    @GetMapping("/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Employee getEmployeeById(@PathVariable Integer id) {
+        return employeeService.getEmployeeById(id);
+    }
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void deleteEmployeeById(@PathVariable Integer id) {
+        employeeService.deleteEmployeeById(id);
+    }
+    @GetMapping("/salaryHigherThan")
+    public List<Employee> showSalaryHigherThan(@RequestParam("salary") Integer salary) {
+        return employeeService.getHigherThanSalaryEmployees(salary);
+    }
     @GetMapping("/all-employees")
     public List<Employee> showAllEmployees() {
         return employeeService.getAllEmployees();
